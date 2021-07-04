@@ -1,0 +1,29 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 35px;
+}
+
+.icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.expandIcon {
+  position: absolute;
+  left: 10px;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.title {
+  color: blue;
+  text-align: left;
+}
+
+.description {
+  color: black;
+}
