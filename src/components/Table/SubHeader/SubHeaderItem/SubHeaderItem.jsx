@@ -11,15 +11,16 @@ const SubHeaderItem = ({ title, accessor, activeSortingField, sortColumn, setDat
     default: true,
   });
 
+  // для скрытия иконки сортировки при переходе на другой элемент
   useEffect(() => {
-    if (activeSortingField !== accessor) {
+    if (accessor !== activeSortingField) {
       setSorting({
         up: false,
         down: false,
         default: true,
       });
     }
-  }, [activeSortingField]);
+  }, [accessor, activeSortingField]);
 
   const sortColumnValues = accessor => {
     if (isSorting.default) {
