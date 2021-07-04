@@ -1,0 +1,9 @@
+.itemRow {
+  height: 60px;
+  background-color: var(--row-unselected);
+}
+
+.itemRowSelected {
+  @extend .itemRow;
+  background-color: var(--row-selected);
+}
