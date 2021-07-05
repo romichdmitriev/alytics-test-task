@@ -6,7 +6,8 @@ export const getTableData = () => {
     try {
       dispatch(fetchTableDataStart());
       dispatch(fetchTableDataSuccess(tableData));
-    } catch (error) {
+    }
+    catch (error) {
       dispatch(fetchTableDataFailure(error));
     }
   };
