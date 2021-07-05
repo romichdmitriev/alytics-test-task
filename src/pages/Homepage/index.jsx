@@ -6,11 +6,11 @@ import styles from './HomePage.module.scss';
 const HomePage = () => {
   return (
     <div className={styles.wrapper}>
-      <Link to='/table' className={styles.slidingButton}>
+      <Link to="/table" className={styles.slidingButton}>
         Открыть таблицу
       </Link>
     </div>
-  )
-}
+  );
+};
 
 export default HomePage;
