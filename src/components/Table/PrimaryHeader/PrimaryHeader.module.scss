@@ -1,0 +1,50 @@
+.primaryHeader {
+  height: 60px;
+  padding-left: 10px;
+  color: var(--primary-heading-color);
+}
+
+.primaryHeaderCell {
+  position: relative;
+  padding-left: 10px;
+  text-align: left;
+  border: 1px solid var(--table-border-color);
+  border-collapse: collapse;
+}
+
+.primaryHeaderFunctions {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50%;
+}
+
+.functionsIcon {
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+}
+
+.headerIcon {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.headerTitle {
+  display: flex;
+  align-items: center;
+}
+
+.headerTitle:first-child {
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--sub-text-color);
+}

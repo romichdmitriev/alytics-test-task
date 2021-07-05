@@ -1,0 +1,30 @@
+.loaderWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100vw - 20px);
+  height: calc(100vh - 150px);
+  border-width: 0 1px 1px 1px;
+  border-color: var(--table-border-color);
+  border-style: solid;
+}
+
+.scrollableBar {
+  height: calc(100vh - 150px);
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+.scrollableBar::-webkit-scrollbar {
+  width: 0;
+}
+
+.table {
+  width: 100%;
+  border-spacing: 0;
+  border: 1px solid var(--table-border-color);
+}
+
+.group {
+  border: 1px solid var(--table-border-color);
+}

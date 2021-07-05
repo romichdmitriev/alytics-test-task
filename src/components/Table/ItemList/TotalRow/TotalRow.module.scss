@@ -1,0 +1,14 @@
+.totalRow {
+  width: 100%;
+  height: 50px;
+  background-color: var(--total-row-bg);
+}
+
+.totalCell {
+  padding-left: 10px;
+  text-align: left;
+}
+
+.totalCellValues {
+  font-weight: 400;
+}

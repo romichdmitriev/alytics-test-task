@@ -1,0 +1,36 @@
+.cell {
+  max-width: max-content;
+  height: 70px;
+}
+
+.cell:first-child {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.cell:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.sortArrow {
+  width: 10px;
+  height: 10px;
+  margin-left: 2px;
+  transform: rotate(-90deg);
+}
+
+.sortArrowHide {
+  @extend .sortArrow;
+  display: none;
+}
+
+.sortArrowUp {
+  @extend .sortArrow;
+  transform: rotate(-90deg);
+}
+
+.sortArrowDown {
+  @extend .sortArrow;
+  transform: rotate(90deg);
+}
