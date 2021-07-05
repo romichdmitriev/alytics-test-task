@@ -3,7 +3,7 @@ import { time } from 'uniqid';
 
 import ItemDescription from './ItemDescription/ItemDescription';
 
-import { TableDataAccessors } from '../TableDataAccessors';
+import { TableDataAccessors } from '../../TableDataAccessors';
 
 import styles from './ItemRow.module.scss';
 
