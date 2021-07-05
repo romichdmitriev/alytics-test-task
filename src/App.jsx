@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter, Switch, Route} from 'react-router-dom';
 
 import Loader from './components/Loader/Loader';
 import Table from './components/Table/Table';
+import HomePage from './pages/Homepage/index';
 
 import { tableData } from './tableData/tableData';
 
@@ -16,7 +18,17 @@ const App = () => {
     setLoading(false);
   }, []);
 
-  return loading ? <Loader /> : <Table data={data} setData={setData}></Table>;
+  return loading ?
+    <Loader />
+    :
+    <BrowserRouter>
+      <Switch>
+        <Route exact path='/' component={HomePage} />
+        <Route path='/table'>
+          <Table data={data} setData={setData}/>
+        </Route>
+      </Switch>
+    </BrowserRouter>
 };
 
 export default App;
