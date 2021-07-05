@@ -19,9 +19,9 @@
   letter-spacing: 3px;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: white;
+  background-color: #2ee59d;
   border-radius: 0 0 5px 5px;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .slidingQuit:before {
@@ -33,7 +33,6 @@
   content: '';
   height: 60px;
   font-size: 11px;
-  background-color: #2EE59D;
 }
 
 .slidingQuit:hover:before {
