@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
@@ -14,10 +14,7 @@ import './app.module.scss';
 const App = () => {
   const dispatch = useDispatch();
   const loadingTableData = useSelector(state => state.isFetching);
-
-  useEffect(() => {
-    dispatch(getTableData());
-  }, []);
+  dispatch(getTableData());
 
   return loadingTableData ?
     <Loader />
