@@ -1,9 +1,9 @@
 import React from 'react';
 import { time } from 'uniqid';
 
-import { TableDataAccessors } from '../TableDataAccessors';
+import { TableDataAccessors } from '../../TableDataAccessors';
 
-import styles from '../Table.module.scss';
+import styles from './TotalRow.module.scss';
 
 const TotalRow = ({ getTotalValueOfColumn }) => {
   return (
