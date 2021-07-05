@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import PerfectScrollbar from 'react-perfect-scrollbar';
 import { sort } from 'fast-sort';
 
@@ -80,6 +81,8 @@ const Table = ({ data, setData }) => {
 
   return (
     <div className={styles.tableWrapper}>
+      <Link to='/' className={styles.slidingQuit} />
+
       <table className={styles.table} rules="groups">
         <colgroup className={styles.group} width="270"></colgroup>
         <colgroup span="6" className={styles.group} width="150"></colgroup>

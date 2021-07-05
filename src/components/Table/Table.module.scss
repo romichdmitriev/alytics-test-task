@@ -3,6 +3,43 @@
   overflow: hidden;
 }
 
+.slidingQuit {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 4px;
+  font-size: 0;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+  transition: .3s;
+}
+
+.slidingQuit:before {
+  content: '';
+  color: #fff;
+}
+
+.slidingQuit:hover {
+  content: '';
+  height: 60px;
+  font-size: 11px;
+  background-color: #2EE59D;
+}
+
+.slidingQuit:hover:before {
+  content: 'Выход';
+}
+
 .table {
   width: 100%;
   border-spacing: 0;
