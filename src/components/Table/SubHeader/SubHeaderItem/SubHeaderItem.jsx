@@ -3,8 +3,10 @@ import React, { useEffect, useState } from 'react';
 import styles from './SubHeaderItem.module.scss';
 
 import arrow from './sort-arrow.svg';
+import { useSelector } from 'react-redux';
 
-const SubHeaderItem = ({ title, accessor, activeSortingField, sortColumn, setData, unsortedData }) => {
+const SubHeaderItem = ({ title, accessor, sortColumn }) => {
+  const activeSortingField = useSelector(state => state.sortingType);
   const [isSorting, setSorting] = useState({
     up: false,
     down: false,
@@ -48,7 +50,7 @@ const SubHeaderItem = ({ title, accessor, activeSortingField, sortColumn, setDat
       down: false,
       default: true,
     });
-    setData(unsortedData);
+    sortColumn(accessor);
   };
 
   const getSortArrowClass = () => {
