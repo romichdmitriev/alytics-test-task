@@ -10,10 +10,12 @@ Requirements:
 
 I have used:
 1. React library
-2. uniqid npm package
-3. fast-sort npm package
-4. react-perfect-scrollbar
-5. prettier
+2. React Router
+3. Redux
+4. uniqid npm package
+5. fast-sort npm package
+6. react-perfect-scrollbar
+7. prettier
 
 Result:
 ![test task](https://user-images.githubusercontent.com/64164474/124392407-d2bfd500-dd0e-11eb-91b1-82b792e3f9b9.gif)
